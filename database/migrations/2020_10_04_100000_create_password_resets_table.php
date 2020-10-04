@@ -11,6 +11,7 @@ class CreatePasswordResetsTable extends Migration
      *
      * @return void
      */
+    // method that is run as first
     public function up()
     {
         Schema::create('password_resets', function (Blueprint $table) {

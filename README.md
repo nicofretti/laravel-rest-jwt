@@ -1,13 +1,19 @@
 ### Installation on linux
 - Configure .env file
 - Run the following command to load dipendencies:
-	```bash 
-		composer install 		# dependencies
-		php artisan jwt:secret 	# set auth secret
-		php artisan migrate 	# populate database tables
-	```
+```bash 
+    composer install 		# dependencies
+    php artisan jwt:secret 	# set auth secret
+    php artisan migrate 	# populate database tables
+```
 
 - Run ```php artisan serve```
+> Error PDOException::("could not find driver")
+> ```bash 
+>   sudo nano /etc/php/php.ini
+>   uncomment the row ;extension=pdo_mysql
+> ```
+> 
 
 ### API
 
